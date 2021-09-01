@@ -1,0 +1,9 @@
+1) Não sabemos, mas deve ser um gerenciador de algum sistema de básico
+
+2) idendificação imutavél de cada aparelho que tem a capacidade de se conectar na internet 
+
+3) Endereço de Ip é atribuído baseado onde você está, a sua operadora, e quantas outros aparelhos estão sendo utilizados, assim ele pode mudar de vez em vez que conecta o aparelho, diferentemente do MAC que nunca muda.
+
+4) Não sabemos o que é CIDR, mas subredes são divisões da sua rede de internet, em que se pode fazer diferentes configurações para cada uma, por exemplo decidir se é publica ou privada, portas de acesso liberadas etc.
+
+5) DHCP (Dynamic Host Configuration Protocol) atribui diferentes indentificadores para cada aparelho em uma rede, DNS (Domain Name System) atribui nomes (máscara) a Ips para facilitar o acesso, por exemplo ao conectar no google não precisamos saber o seu IP, apenas o seu nome (google.com). Gateways são nodes, onde dados passam para sere transmitidos, por exemplo um roteador é um gateway

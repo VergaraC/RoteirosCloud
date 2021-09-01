@@ -1,0 +1,28 @@
+Rede
+
+1) A topologia da rede é do tipo STAR, ou seja tudo está conectado no switch (a central dessa topologia.
+Outras topologias comumente utilizadas são a RING, a MESH (com foco na redundância) e a BUS
+
+2) Uma rede pode utilizar mais gateways cas esteja conectada com mais de 1 IP
+
+3) Usando um DNS externo em uma rede privada, é que a comunicação não vai ser feita diretamente, assim ela não será o quão rápido poderia ser, caso utilize-se um dns interno.
+
+4) A Rede apresenta 65533, visto que apresenta 2^16 endereços, sendo 2 reservados (o primeiro da rede e o de broadcasting)
+
+5) Existem 5 Classes de Redes:
+	-A
+	-B
+	-C, a mais usade atualmente
+	-D, utilizada para multicasting
+	-E, ainda em experimentação e pesquisa
+Todas essas classes de rede podem ser identificadas pelos seus 4 primeiros números binários: 0, 10, 110, 1110, 1111 respectivamente.
+O maas não segue o protocolo de nenhuma das classes, isso possibilita ter mais números de IPs diponíveis, sendo possível conectar mais dispositivos
+
+######################################################################################
+
+Chaveando o DHCP
+
+1) Por que o DHCP foi configurado no mass, assim não é necessário que o Roteador faça isso, além disso é mais seguro.
+
+2) Um ataque DHCP rogue é quando há um servidor DHCP que não está sob controle dos administradores. Isso pode ser causado propositalmente por algum funcionário, ou via ataques de vírus. Esse ataque é um ataque do tipo man-in-the-middle, ou seja ele tem acesso e pode alterar a comunicação entre 2 pontos (client-server).
+Para evitar ataques desse tipo é necessário ter uma boa segurança física, a fim de evitar que pessoas externas conectem a sua rede, obrigar os seus clientes a usar algum software de segurança (como alguns bancos fazem), também é recomendado checar os IPs e endereços MAC de onde o cliente está acessando, assim é possível checar os devices e de onde que o cliente está acessando, assim é possível criar um Whitelist de devices e localizações em que o cliente já acessou antes.

@@ -1,0 +1,22 @@
+				Primeira Instância:
+
+1) As Policies definem as permissões de um usuário, ou seja o que ele pode ou não fazer, quais seviços pode utilizar etc.
+Policies bem definidas são importantes para que cada usuário tenha acesso de acordo com o que é necessário para o seu trabalho, não tendo acesso administrativo quando não é necessário, diminuindo o risco de erros ou invasões, que podem causar prejuízos ao dono da conta.
+
+2) Instance: Máquina sendo utilizada
+Image: Imagens a serem instaladas nas instâncias com sistemas operacionais, como ubuntu, amazon Linux etc
+VPC: Virtual Private Cloud, é uma rede de cloud privada, ou seja é possível configurar quem tem acesso a rede
+subnet: subdivisão de uma rede de Internet, sendo possível fazer configurações diferentes para as diferentes subnets
+Security Group: Sistema de segurança que pode controlar os IPs que podem acessar a rede e suas portas.
+
+3) vCPU é uma CPU virtual, ela representa uma parte de uma CPU real, ou seja ela na realidade não existe e faz parte de uma CPU que está simulando vários CPUs virtuais.
+
+				Primeiro Deploy
+
+1) Foram criadas 4 instâncias, 1 controladora e 3 ghosts, isso é negativo, visto que as instâncias foram criadas sem que eu tenha configurado manualmente ou avisado em apenas alguns comandos, mosterando que a instância tinha acesso administrador, sendo possível levantar e administrar instâncias, indicando uma falta de segurança, pois caso alguém tenha acesso a instância esta poderá levantar novas instância com diferças funções.
+
+2) Segundo a AWS na região us-east-1, a instância t2.micro custa 0.012 dólares por mês , já a t3a.medium custa 0.038, e a t3.micro custa 0.009, assim a primeira instância (criada manualmente) custaria 2,016 dólares, a instância controller custaria 6,384 dólares e as instâncias ghosts custariam 4,536(1,512 cada), sendo 12,936 dólares para rodar o sistema por 1 semana.
+
+3)
+
+4) Para um sistema pequeno ou médio uma Public Cloud é mais em conta, visto que apenas se paga pelo uso e tem escabilidade, sendo possível aumentar o seu uso sem um investimento prévio maior, não é necessário arcar com os custos de segurança, cybernética e física, energia, sistemas de backup, depreciação de hardware etc. Mas caso se trate de uma empresa grande o custo de ter uma Datacenter próprio pode ser menor, mesmo que seja mais complicado e exige um maior número de trabalhadores, logística. mas abre a oportunidade de vender a sua infraestrutura como um serviçob (IaaS) sendo possível de pagar o custo de manter o seu Datacenter, ou até gerar lucro.

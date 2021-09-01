@@ -1,0 +1,5 @@
+1) Public Cloud, é a nuvem aberta, sendo possível acessar os recursos da cloud remotamente, sem precisar estar dentro da rede da nuvem, mas ainda é possível restringir os IPs que podem acessar a nuvem. Assim é possível acessar a nuvem do escritório, de outras nuvens ou de casa, sem precisar usar um vpn para entrar na rede da nuvem, o problema disso é que por poder ser acessada remotamente é menos segura que uma nuvem que é privada.
+
+2) IaaS é a comercialização de memória, processamento, armazenamento e outros serviços de computação em um sistema de "pay as you go", ou seja é cobrado pelo uso.
+
+3) Escabilidade é poder aumentar e diminuir o uso de recursos, como processamento ou espaço para armazenamento, assim qualquer empresa poderia utilizar uma cloud e pagar apenas pelo que usa, tendo a possibilidade de aumentar e diminuir o seu consumo imediatamente sem problemas, apenas pagando a mais para esse uso extra.
