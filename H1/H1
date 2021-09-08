@@ -18,6 +18,7 @@ Outras topologias comumente utilizadas são a RING, a MESH (com foco na redundâ
 Todas essas classes de rede podem ser identificadas pelos seus 4 primeiros números binários: 0, 10, 110, 1110, 1111 respectivamente.
 O maas não segue o protocolo de nenhuma das classes, isso possibilita ter mais números de IPs diponíveis, sendo possível conectar mais dispositivos
 
+
 ######################################################################################
 
 Chaveando o DHCP
@@ -26,3 +27,72 @@ Chaveando o DHCP
 
 2) Um ataque DHCP rogue é quando há um servidor DHCP que não está sob controle dos administradores. Isso pode ser causado propositalmente por algum funcionário, ou via ataques de vírus. Esse ataque é um ataque do tipo man-in-the-middle, ou seja ele tem acesso e pode alterar a comunicação entre 2 pontos (client-server).
 Para evitar ataques desse tipo é necessário ter uma boa segurança física, a fim de evitar que pessoas externas conectem a sua rede, obrigar os seus clientes a usar algum software de segurança (como alguns bancos fazem), também é recomendado checar os IPs e endereços MAC de onde o cliente está acessando, assim é possível checar os devices e de onde que o cliente está acessando, assim é possível criar um Whitelist de devices e localizações em que o cliente já acessou antes.
+
+
+######################################################################################
+
+Comissioning Nodes
+
+
+1) PXE boot é um método de boot que não precisa de nenhum OS ou imagem instalada na máquina, sendk possível fazé-lo via internet. Assim, em um daracenter real não seria necessário armazenar e algum HDD ou SSD as imagens a serem bootadas pelas máquinas, fazendo com se gaste menos storage.
+
+
+
+2) MaaS facilita o gerenciamento de servidores visto que ele permite que montamos com maior rapidez e eficácia, porque nos permite trabalhar com o servidor como se fosse  um recurso elástico, sendo possível criar e operar máquinas virtuais dentro do servidor.
+
+
+######################################################################################
+
+Finalizando
+
+1)
+
+2)
+
+3)
+
+
+
+######################################################################################
+
+Questões Complementares
+
+1)
+
+
+2)
+
+
+3)
+
+
+4)
+######################################################################################
+
+Concluindo
+
+1)
+
+
+
+2)
+
+
+3)
+
+
+4)
+
+
+5)
+
+
+Conclusão:
+
+
+
+
+
+
+
+
