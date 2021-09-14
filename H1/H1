@@ -45,52 +45,62 @@ Comissioning Nodes
 
 Finalizando
 
-1)
+1) O NAT é o sistema que faz a tradução do ip interno da rede interna (privado) para  o da rede externa (público) através de uma tabela hash.
 
-2)
+2) Uma VPN adiciona uma camada de criptografia a comunicação via internet, e além disso ela  faz o redirecionamento das suas ações por outro servidor, a fim de máscarar o endereço de origem.
 
-3)
-
+3) Para acessar o Maas remotamente seria necessário liberar o acesso ao Maas de um ip remoto, assim facilitando o seu acesso por outras pessoas tembém, diminuindo a segurança
+ 
 
 
 ######################################################################################
 
 Questões Complementares
 
-1)
+1) LTS significa Long Term Support, ou seja um produto (geeralmente software) que recebe atenção e updates contínuos de seus desenvolvedores, geralmente sendo uma versão mais robusta e durável. Para uma empresa isso é importante porque ela sabe que o seu projeto desenvolvido terá um funcionamento longo e consegue planejar com mais calma os updates para as versões mais novas LTS, sem se preocupar em ficar desatualiuzado ou não funcionar corretamente.
 
 
-2)
+2) IPv6 é uma iteração do endereço de IP que surgiu pela necessidade de um maior número de endereços por causa do rápido crescimento da internet. Este protocolo possui mais dígitos que o IPv4 para suprir essa maior demanda.
 
 
-3)
+3) As 5 camadas da Internet são:
+
+	- A camada física, que é o hardware conectado, computadores,moden, cabos etc;
+	- A camada de comunicação, responsável por transmitir os dados entre os computadores;
+	- A camada de Rede, responsável por encontrar e escolher os endereços para a comunicação;
+	- A camada de Transporte, prepara as menssagens para o envio e faz a conexão entre a Camada de Rede e Aplicação;
+	- A camada de Aplicação, é a camada que o usuário usa, como um browser, onde é gerado e escolhido o que vai ser enviado.
 
 
-4)
+4) A diferença dos dois modelos é que o modelo de rede OSI possui duas camadas a mais, as camadas de Sessão e Apresentação.     
+	- Apresentação: responsável por compressão e encryption;    
+	- Sessão: responsável por autenticações e permissões.
+
+
+
 ######################################################################################
 
 Concluindo
 
-1)
+1) Bare Metal é a base para montar um servidor, o seu gerenciador serve para facilitar a criação, configuração e uso desses servidores.
 
 
 
-2)
+2) MAC address é um endereço único que é dado para cada controlador de interface de rede, ou seja todos os dispositivos que tem a capacidade de se conectarem a internet tem um desses endereços
 
 
-3)
+3) Cada máquina conectada a internet tem um endereço ip dado a ela, esse é o IP, via ele é possível localizar e efetuar a comunicação com a máquina.
+A diferença entre o Ip e o MAC é que o MAC é um endereço fixo, já o IP é um endereço dinámico, cada vez que conectamos a máquina a rede ele muda.
 
 
-4)
+4) CIDR é um método de alocação de IP e de seu roteamento que subistituiu o sistema de classes de redes mencionado anteriormente no roteiro para suportar IPv6 e facilitar o seu uso.
+O CIDR também faz a criação de subredes, onde o IP pode ser dividos em diferentes partes com diferentes configurações visando a eficiência do sistema.
 
 
-5)
+5) DHCP (Dynamic Host Configuration Protocol) atribui diferentes indentificadores para cada aparelho em uma rede, DNS (Domain Name System) atribui nomes (máscara) a Ips para facilitar o acesso, por exemplo ao conectar no google não precisamos saber o seu IP, apenas o seu nome (google.com). Gateways são nodes, onde dados passam para sere transmitidos, por exemplo um roteador é um gateway
 
 
 Conclusão:
-
-
-
 
 
 
