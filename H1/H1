@@ -100,7 +100,11 @@ O CIDR também faz a criação de subredes, onde o IP pode ser dividos em difere
 5) DHCP (Dynamic Host Configuration Protocol) atribui diferentes indentificadores para cada aparelho em uma rede, DNS (Domain Name System) atribui nomes (máscara) a Ips para facilitar o acesso, por exemplo ao conectar no google não precisamos saber o seu IP, apenas o seu nome (google.com). Gateways são nodes, onde dados passam para sere transmitidos, por exemplo um roteador é um gateway
 
 
-Conclusão:
+Conclusão: 
+
+	O MaaS foi construído para o seu uso em larga escala, como em datacenters e cloud hosts, com o Maas não é necessário configurar cada uma das máquinas individualmente ou criar os controles dos servidores, basta apenas configurar para as suas necessidades. Além disso o Maas já vem com sistemas de coordenação de infraestrutura, mantendo os servidores sempre disponíveis.
+	
+	Um processo alternativo sem o uso do MaaS seria a configuração de cada um dos nodes da rede do zero, instalando os OSs, configurações básicas, comunicação entre as máquinas, repartição do(s) IP(s) etc 
 
 
 
