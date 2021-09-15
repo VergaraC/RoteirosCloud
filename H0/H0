@@ -17,6 +17,16 @@ Security Group: Sistema de segurança que pode controlar os IPs que podem acessa
 
 2) Segundo a AWS na região us-east-1, a instância t2.micro custa 0.012 dólares por mês , já a t3a.medium custa 0.038, e a t3.micro custa 0.009, assim a primeira instância (criada manualmente) custaria 2,016 dólares, a instância controller custaria 6,384 dólares e as instâncias ghosts custariam 4,536(1,512 cada), sendo 12,936 dólares para rodar o sistema por 1 semana.
 
-3)
+3)Para criar um ambiente ghost em um datacenter seria necessário 5 máquinas, 1 para cada instância.
 
 4) Para um sistema pequeno ou médio uma Public Cloud é mais em conta, visto que apenas se paga pelo uso e tem escabilidade, sendo possível aumentar o seu uso sem um investimento prévio maior, não é necessário arcar com os custos de segurança, cybernética e física, energia, sistemas de backup, depreciação de hardware etc. Mas caso se trate de uma empresa grande o custo de ter uma Datacenter próprio pode ser menor, mesmo que seja mais complicado e exige um maior número de trabalhadores, logística. mas abre a oportunidade de vender a sua infraestrutura como um serviçob (IaaS) sendo possível de pagar o custo de manter o seu Datacenter, ou até gerar lucro.
+
+				Escalabilidade
+
+1) crontab é um arquivo para dizer quais funções crons queremos rodar (funções que rodam automaticamente de acordo com o a rotina que escrevemos), nesse caso utilizamos para adicionar para rodar o arquivo server.js sempre que a Ec2 rebootar.
+
+2)
+
+3)
+
+4)
