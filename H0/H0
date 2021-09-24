@@ -25,8 +25,18 @@ Security Group: Sistema de segurança que pode controlar os IPs que podem acessa
 
 1) crontab é um arquivo para dizer quais funções crons queremos rodar (funções que rodam automaticamente de acordo com o a rotina que escrevemos), nesse caso utilizamos para adicionar para rodar o arquivo server.js sempre que a Ec2 rebootar.
 
+			Simulando carga no servidor
+			
+1) AMI significa Amazon Machine Images, quando for lançar uma Ec2, ao invés de ter que criar a máquina do zero e refazer todas as instalações e configurações, é  possível criar uma imagem de uma máquina já existente e criar outras iguais a ela utilizando AMIs.
+
+				Escalando Verticalmente
+
+1) a t2.2xlarge é uma máquina com maior número de vCPUS, 8, enquanto a t2.micro apresenta 1, o primeiro também apresenta um número maior de créditos de CPU por hora (81 X 6) possibilitando o uso máximo da CPU por mais tempo. Além disso a t2.2xlarg apresenta uma memória maior de 32Gib, enquanto a t2.micro apresenta uma de 1 GiB. E por final a T2.2xlarge apresenta uma performance de redes melhor que a da t2.micro
+
+2)
+				Escalando Horizontalmente
+1)
+
 2)
 
-3)
 
-4)
