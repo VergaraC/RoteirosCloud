@@ -1,2 +1,60 @@
-"system_id": "xypwse",
-192.168.0.6
+				Último Capítulo: Proxy Reverso
+				
+				
+1)
+- instale o NGINX com o comando "sudo apt-get install nginx"
+- para fazer o setup do Upstream Module devemos alterar as configurações do nginx com "sudo nano /etc/nginx/sites-available/default"
+- dentro das configurações do nginx podemos adicionar essas linhas para começarmos a habilitar o load balancing em cada node: 
+	 
+	upstream backend  {
+  	 	server 192.168.0.6; //IP do node 2
+  	 	server 192.168.0.7; //IP do node 3
+	}
+
+- para nos prevenir de mandar dados para servidores que não estão funcionando podemos configurar um número máximo de falhas e um timeout para os servidores que quisermos, no mesmo módulo:
+	
+	upstream backend  {
+  	 	server 192.168.0.6 max_fails=3 fail_timeout=15s; 
+  	 	server 192.168.0.7 max_fails=3 fail_timeout=15s; 
+	}
+
+- depois disso vamos chamar esse módulo mais para baixo no arquivo:
+	
+	server {
+  	  location / {
+    	    proxy_pass  http://backend;
+  	  }
+	}
+
+- agora reinicie o nginx: "sudo service nginx restart"
+
+
+2) Reverse Proxy é quando um Servidor recebe as requests e as repassa para outros servidores a fim de manter a eficiência e segurança do sistema, assim ele faz o papel de um Load Balencer.
+
+3) Ruim, visto que se fizessemos em um Public Cloud não seria necessário o custo inicial de compra do Hardware e instalações de rede, e seguindo o modelo pay as you go, pagaríamos apenas pelo tempo que deixamos o sistema ligado.
+
+
+					Agora Juju
+
+1) Durante a criação do juju controller foi instalado Ubuntu 20.4 LTS
+
+2) É importante ter uma API para uma aplicação, porque a API permite comunicação entre o front e back end, como foi o caso do deploy da máquina juju sendo que o comando veio do terminal do meu computador.
+					
+					
+				Questões Complementares
+				
+1) O juju não é uma aplicação distribuída, visto que ele roda apenas em uma máquina, já o MaaS está em várias máquinas, mas se mantém como se fosse uma única coisa para o usuário, assim é considerado uma aplicação distribuída.
+
+2)
+
+3)			
+				
+					Concluindo
+					
+1)
+
+2)
+
+3)
+
+					Conclusão	
