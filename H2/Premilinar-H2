@@ -4,7 +4,7 @@
 
 3)Aplicação Distribuída é quando diferentes partes de um sistema estão e diferentes redes, muitas vezes cada parte é chamada como um serviço.
 
-Alta disponibilidade é quando um servidor sempre está acessível, caso a sua conexão com a internet caia ou varie muito, há um sistema que efetua a sua troca de rede para que ele continue acessível, podendo ser utilizado, caso não utilize esse sistema seria necessário mudar manualmente a rede, ou esperar a conexão se restbilizar.
+Alta disponibilidade é quando um servidor sempre está acessível, caso a sua conexão com a internet caia ou varie muito, há um sistema que efetua a sua troca de rede para que ele continue acessível, podendo ser utilizado, caso não utilize esse sistema seria necessário mudar manualmente a rede, ou esperar a conexão se restabilizar.
 
 Load Balancing serve para distribuir o tráfego entre múltiplos servidores back-end, sendo essencial para serviços com um grande tráfego, pois assim não sobrecarrega os servidores, aumentando a eficiência do sistema, sendo mais cost efficient e  evitando problemas com os servidores.
 

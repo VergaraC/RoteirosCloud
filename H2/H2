@@ -45,16 +45,31 @@
 				
 1) O juju não é uma aplicação distribuída, visto que ele roda apenas em uma máquina, já o MaaS está em várias máquinas, mas se mantém como se fosse uma única coisa para o usuário, assim é considerado uma aplicação distribuída.
 
-2)
+2) REST ou Representational State Transfer é um estilo de API que habilita a interação com serviços web RESTful. Ele consiste em restrições de arquitetura e guidelines, portanto não é um protocolo e por isso é especialmente bom para projetos com escalabilidade e para mobile development.
 
-3)			
-				
+
+3) SOAP, ou Simple Object Access Protocol, é um protocolo de comunicação inteiramente via XML e transportado via http, o que faz ele não depender de linguagens ou plataformas. Há outros protocolos que podem subitituir o SOAP, como o CORBA, DCOM e Java RMI, mas esses não são feitos inteiramente em XML, assim não funcionam em qualquer platforma ou com qualquer linguagem.
+	
 					Concluindo
 					
-1)
+1) Um Deployment Orchestrator é um manager de deploys, ele organiza e ordena os deploys a serem feitos, conseguindo faze-los em paralelo ou seguir alguma ordem customizada. Ele também pode fazer checks nos servidores ou fazer migrações em banco de dados e podem ser utilizados para fazer Cloud Automation.
 
-2)
+2)  O cliente faz uma requisição com algum dos 5 verbos da API REST (GET, POST, PUT, DELETE e PATCH), aí o servidor responde variando a url do request e do verbo utilizado. Uma grande vantagem da aplicação de API REST é a separação do front-end do back-end, evitando problemas com o armazenamento de dados, visto que esses só ocorrem quando se utiliza as APIs
 
-3)
+3)Aplicação Distribuída é quando diferentes partes de um sistema estão e diferentes redes, muitas vezes cada parte é chamada como um serviço.
+
+Alta disponibilidade é quando um servidor sempre está acessível, caso a sua conexão com a internet caia ou varie muito, há um sistema que efetua a sua troca de rede para que ele continue acessível, podendo ser utilizado, caso não utilize esse sistema seria necessário mudar manualmente a rede, ou esperar a conexão se restabilizar.
+
+Load Balancing serve para distribuir o tráfego entre múltiplos servidores back-end, sendo essencial para serviços com um grande tráfego, pois assim não sobrecarrega os servidores, aumentando a eficiência do sistema, sendo mais cost efficient e  evitando problemas com os servidores.
 
 					Conclusão	
+
+Não seria necessário uma máquina de 32Gb para rodar um Webserver ou um Load Balancer. Pensando em um Datacenter real, seria necessário máquinas robustas para rodar Webservers ou Load Balancers, visto que esses teriam um uso muito maior. Mas caso não seja necessário seria possível criar máquinas virtuais dentro das máquinas maiores e configurar o uso do hardware, como é feito pelos provedores de cloud.
+					
+					
+					
+					
+					
+					
+					
+					
