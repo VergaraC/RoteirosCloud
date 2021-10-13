@@ -1,0 +1,43 @@
+1) A Private Cloud é mais vantasoja qye a Public Cloud quando se quer rodar uma máquina que se comunique com outras, mas que não possa ser acessada remotamente. A Private Cloud também é melhor para quando se quer maior segurança e privacidade.
+
+
+2) OpenStack é um Sistema operacional para cloud computing, sendo possível usá-lo para controlar seu tráfego, armazenamento e outros via APIs ou dashboard.
+
+
+3)
+
+-Compute(Nova): Controlador que gerencia os recursos do computador, trabalhando
+com bare metals, virtualização, entre outros.
+
+-Image Service(Glance): Usado para descobrir, registrar e restaurar imagens de
+máquinas virtuais. Sua arquitetura é de cliente servidor e usa de REST para buscar por informações da máquina virtual e recuperar a própria imagem.
+
+-Object Storage(Swift): Storage escalável e redundante que consegue armazenar
+petabytes de informação. (permite envio, recebimento e atualização de dados).
+Ela tem uma arquitetura distribuida, não tendo um ponto central de controle e sendo
+altamente compartilhavel, consistente e disponível. Sendo usada para manter as infos
+de uma organização seguras.
+
+-Dashboard(Horizon): Dashboard usada como interface gráfica para automatizar os
+recursos da nuvem. Permitindo uso de monitoramento, pagamento e outras ferramentas
+de monitoramento externo.
+
+-Identity Service(Keystone): Serviço de autenticação. Além disso, ela permite
+uma busca em uma lista de serviços que foram deployed na cloud do OpenStack.
+
+-Networking(Neutron): Usado para gerenciar desde redes até IP's na OpenStack.
+Ela permite um serviço self-service para os usuários para realizar configurações de rede
+e garante um bom desempenho da rede em um deploy de cloud.
+
+-Block Storage(Cinder): Armazenamento de blocos para aplicações que instâncias da
+OpenStack, podendo ser gerenciada pelo DashBoard e pelo Nova. Podendo utilizar
+de plataformas de armazenamento com o Linux Server, IBM, entre outros.
+
+-Telemetry(Ceilometer): Fornece um ponto de contato único para sistemas de
+pagamento, levando em conta todas as medidas para conseguir autorizar o pagamento
+correto do usuário (através dos componentes da OpenStack)
+
+-Orchestration(Heat): Serviço que orquestra e compõe multiplas aplicações de cloud
+através tanto da QueryAPI quanto da Rest API do openStack, usando um template
+parecido com a da AWS.
+
