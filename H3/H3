@@ -1,0 +1,42 @@
+			Instalando - Openstack Canonical Distro
+
+1) LXD é um container de sistemas para Linux. Ele possibilita o gerenciamento de instâncias de containers e máquinas virtuais por meio da command line ou do REST API.
+
+2)
+	
+
+1) O Vault utiliza secret engines, onde após utilizar um do seus métodos de autentificação ele consegue integrar com sistemas externos, assim protegendo senhas, credenciais e chaves.
+
+				Configurando o Openstack
+
+1)
+
+	
+
+					Escalando os nós
+
+1)
+
+					Deja-vu (Juju Reborn)
+	
+1)
+
+					Questões Complementares
+				
+1)
+
+2)
+
+3)
+
+4)
+
+				  	   Concluindo
+				
+1)
+
+2)
+
+3)
+
+Conclusão:
