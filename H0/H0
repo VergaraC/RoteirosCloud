@@ -21,7 +21,7 @@ Security Group: Sistema de segurança que pode controlar os IPs que podem acessa
 
 4) Para um sistema pequeno ou médio uma Public Cloud é mais em conta, visto que apenas se paga pelo uso e tem escabilidade, sendo possível aumentar o seu uso sem um investimento prévio maior, não é necessário arcar com os custos de segurança, cybernética e física, energia, sistemas de backup, depreciação de hardware etc. Mas caso se trate de uma empresa grande o custo de ter uma Datacenter próprio pode ser menor, mesmo que seja mais complicado e exige um maior número de trabalhadores, logística. mas abre a oportunidade de vender a sua infraestrutura como um serviçob (IaaS) sendo possível de pagar o custo de manter o seu Datacenter, ou até gerar lucro.
 
-				Escalabilidade
+					Escalabilidade
 
 1) crontab é um arquivo para dizer quais funções crons queremos rodar (funções que rodam automaticamente de acordo com o a rotina que escrevemos), nesse caso utilizamos para adicionar para rodar o arquivo server.js sempre que a Ec2 rebootar.
 
@@ -33,10 +33,42 @@ Security Group: Sistema de segurança que pode controlar os IPs que podem acessa
 
 1) a t2.2xlarge é uma máquina com maior número de vCPUS, 8, enquanto a t2.micro apresenta 1, o primeiro também apresenta um número maior de créditos de CPU por hora (81 X 6) possibilitando o uso máximo da CPU por mais tempo. Além disso a t2.2xlarg apresenta uma memória maior de 32Gib, enquanto a t2.micro apresenta uma de 1 GiB. E por final a T2.2xlarge apresenta uma performance de redes melhor que a da t2.micro
 
-2)
+2) Porque a taxa com que recebe as requisições não tem uma grande
+diferença entre a t2.micro para o t2.2xlarge.
+
 				Escalando Horizontalmente
+				
+1) A AWS impõe limites para o LoadBalencer, podendo ter no máximo 1000 instâncias para cada.
+
+2) O LoadBalancer divide as requisições entre webservers, ele funciona checando a disponibilidade dos servidores dos webservers e divide as requisições de acordo.
+
+1) O autoscalling Group da AWS mantém um número ideal para manter com o poder computacional necessário paara a aplicação, sendo possível configurar as regras que o serviço segue.
+
+2) A escabilidade horizontal (Scale Out) aumenta o número de máquinas para acompanhar com a necessidade, já a escabilidade vertical (Scale Up) aumenta o poder computacional das instâncias.
+
+3) Um exemplo de Escabilidade Horizontal é o PostgreSQL, um sistema de banco de dados derivado do MySQL.
+
+				Questões Complementares
+
+1) Virtual Private Servers (VPS) possibilita a criação de várias máquinas virtuais em apenas 1 máquina, já as instâncias são criadas via um software que roda em várias máquinas
+
+2) SaaS é a venda de um serviço, assim o seu fornecedor é responsável pela sua disponibilização.
+Já o PaaS fornece a base para se montar um serviço, como hospedagem.
+
+3) O LoadBalancer evita que o serviço ou site da empresa saia do ar ou seja muito lento, assim mesmo tendo um custo elevado, ele se paga evitando custos de serviços fora de ar e uma perda de imagem de uma empresa e serviço de alta qualidade e que se possa depender.
+
+					Concluindo
+					
 1)
 
 2)
+
+3)
+
+Conclusão:
+
+
+
+
 
 
