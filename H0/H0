@@ -59,14 +59,17 @@ Já o PaaS fornece a base para se montar um serviço, como hospedagem.
 
 					Concluindo
 					
-1)
+1) Public Cloud, é a nuvem aberta, sendo possível acessar os recursos da cloud remotamente, sem precisar estar dentro da rede da nuvem, mas ainda é possível restringir os IPs que podem acessar a nuvem. Assim é possível acessar a nuvem do escritório, de outras nuvens ou de casa, sem precisar usar um vpn para entrar na rede da nuvem, o problema disso é que por poder ser acessada remotamente é menos segura que uma nuvem que é privada.
 
-2)
+2) IaaS, Infrastructure as a Service, é a comercialização de memória, processamento, armazenamento e outros serviços de computação em um sistema de "pay sas you go", ou seja é cobrado pelo uso.
 
-3)
+3) Escabilidade é poder aumentar e diminuir o uso de recursos, como processamento ou espaço para armazenamento, assim qualquer empresa poderia utilizar uma cloud e pagar apenas pelo que usa, tendo a possibilidade de aumentar e diminuir o seu consumo imediatamente sem problemas, apenas pagando a mais para esse uso extra.
+
 
 Conclusão:
 
+A instância é a divisão virtual de hardwares, proporcionando um ambiente isolado e seguro para o cliente, mantendo um alto aproveitamento do hardware.
+Para montar um sistema similar a AWS em um datacenter própio eu usaria o MaaS para facilitar a configuração e gerenciamento do sistema, e OpenStack para fazer as partições e alocamentos virtuais.
 
 
 
