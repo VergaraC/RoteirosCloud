@@ -9,9 +9,18 @@
 
 				Configurando o Openstack
 
-1)
+1)openstack subnet create --network ext_net --no-dhcp \
+   --allocation-pool start=192.168.7.0,end=192.168.8.255 \
+   ext_subnet
+   
+   openstack subnet create --network int_net \
+   --subnet-range 192.168.0/24 \
+   int_subnet
 
-	
+openstack subnet create --network ext_net --no-dhcp \
+   --gateway 192.168.0.1 --subnet-range 192.168.0.0/20 \
+   --allocation-pool start=192.168.7.0,end=192.168.8.255 \
+   ext_subnet
 
 					Escalando os nós
 
