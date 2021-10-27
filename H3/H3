@@ -1,4 +1,4 @@
-			Instalando - Openstack Canonical Distro
+					Instalando - Openstack Canonical Distro
 
 1) LXD é um container de sistemas para Linux. Ele possibilita o gerenciamento de instâncias de containers e máquinas virtuais por meio da command line ou do REST API.
 
@@ -9,18 +9,8 @@
 
 				Configurando o Openstack
 
-1)openstack subnet create --network ext_net --no-dhcp \
-   --allocation-pool start=192.168.7.0,end=192.168.8.255 \
-   ext_subnet
-   
-   openstack subnet create --network int_net \
-   --subnet-range 192.168.0/24 \
-   int_subnet
+1) Imagem ArquiteturaOpenStack.jpeg
 
-openstack subnet create --network ext_net --no-dhcp \
-   --gateway 192.168.0.1 --subnet-range 192.168.0.0/20 \
-   --allocation-pool start=192.168.7.0,end=192.168.8.255 \
-   ext_subnet
 
 					Escalando os nós
 
