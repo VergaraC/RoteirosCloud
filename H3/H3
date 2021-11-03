@@ -14,7 +14,21 @@
 
 					Escalando os nós
 
-1)
+1) Hypervisor é um gerenciador de máquinas virtuais, sendo possível criar e rodar máquinas virtuais, servindo também como um monitor, sendo possível anilisar os Status e métricas importantes das máquinas em tempo real.
+O OpenStack utiliza o LXC como o seu Hypervisor, já a AWS utiliza o Xen junto com o KVM, sendo uma solução mais parecida com um bare metal.
+A Azure utiliza o Hyper-V
+
+
+
+
+				Django II - low cost version
+				
+				
+1. Levantar as máquinas que serão usadas com o OpenStack utilizando FloatingIPs
+2. Instalar e configurar o postgres no node 1 conforme o roteiro h2
+3. Fazer instalação do Django na outra máquina
+5. no node2, alterar o arquivo tasks/portfolio/settings.py para estabelecer a comunicação com o database e rodar o install ssh
+6. no node1, alterar etc/postgresql/12/main/postgresql.conf para receber comunicação externa da ext_net do node 2 e reiniciar o banco de dados
 
 					Deja-vu (Juju Reborn)
 	
@@ -22,9 +36,8 @@
 
 					Questões Complementares
 				
-1)
 
-2)
+2) Uma nuvem híbrida poderia ter a sua parte privada sendo um sistema de comunicação entre máquinas, como utilizamos as VMs nesse roteiro, mas sem um um IP flutuante, sendo assim máquinas isoladas só podendo comunicar entre si, sem um acesso externo. E uma máquina poderia ter acesso  rede interna, podendo se comunicar com as máquinas da rede privada e um Ip público a fim de podermos acessesá-la externamente.
 
 3)
 
