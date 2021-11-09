@@ -30,25 +30,92 @@ A Azure utiliza o Hyper-V
 5. no node2, alterar o arquivo tasks/portfolio/settings.py para estabelecer a comunicação com o database e rodar o install ssh
 6. no node1, alterar etc/postgresql/12/main/postgresql.conf para receber comunicação externa da ext_net do node 2 e reiniciar o banco de dados
 
-					Deja-vu (Juju Reborn)
+					Deja-vu (Juju Reborn)----------- MUDAR KRL
 	
-1)
+1) *cd openstack-base && source openrc (pegar as vars de OS)
+*cloud type: Openstack
+*<Name>
+*API endpoint url=<OS_AUTH_URL>
+*Ca certificate path = /tmp/root-ca.crt
+*authtype <pass>
+*Passar o region <OS_REGION_NAME>
+*Default no API endpoint url
+
+2) juju bootstrap <cloud_name> --credential <cloud_credentials> --config network=internal
 
 					Questões Complementares
 				
 
 2) Uma nuvem híbrida poderia ter a sua parte privada sendo um sistema de comunicação entre máquinas, como utilizamos as VMs nesse roteiro, mas sem um um IP flutuante, sendo assim máquinas isoladas só podendo comunicar entre si, sem um acesso externo. E uma máquina poderia ter acesso  rede interna, podendo se comunicar com as máquinas da rede privada e um Ip público a fim de podermos acessesá-la externamente.
 
-3)
+3) É possível, só é necessário alocar mais de uma máquina para a mesma instância.
 
-4)
+4) Sim, caso queira criar máquinas virtuais dentro de uma máquina virtual é possível rodar OpenStack sobre outro OpenStack.
 
 				  	   Concluindo
 				
-1)
+1) A Private Cloud é mais vantasoja qye a Public Cloud quando se quer rodar uma máquina que se comunique com outras, mas que não possa ser acessada remotamente. A Private Cloud também é melhor para quando se quer maior segurança e privacidade.
 
-2)
+2) OpenStack é um Sistema operacional para cloud computing, sendo possível usá-lo para controlar seu tráfego, armazenamento e outros via APIs ou dashboard.
 
-3)
+3) -Compute(Nova): Controlador que gerencia os recursos do computador, trabalhando
+com bare metals, virtualização, entre outros.
 
-Conclusão:
+-Image Service(Glance): Usado para descobrir, registrar e restaurar imagens de
+máquinas virtuais. Sua arquitetura é de cliente servidor e usa de REST para buscar por informações da máquina virtual e recuperar a própria imagem.
+
+-Object Storage(Swift): Storage escalável e redundante que consegue armazenar
+petabytes de informação. (permite envio, recebimento e atualização de dados).
+Ela tem uma arquitetura distribuida, não tendo um ponto central de controle e sendo
+altamente compartilhavel, consistente e disponível. Sendo usada para manter as infos
+de uma organização seguras.
+
+-Dashboard(Horizon): Dashboard usada como interface gráfica para automatizar os
+recursos da nuvem. Permitindo uso de monitoramento, pagamento e outras ferramentas
+de monitoramento externo.
+
+-Identity Service(Keystone): Serviço de autenticação. Além disso, ela permite
+uma busca em uma lista de serviços que foram deployed na cloud do OpenStack.
+
+-Networking(Neutron): Usado para gerenciar desde redes até IP's na OpenStack.
+Ela permite um serviço self-service para os usuários para realizar configurações de rede
+e garante um bom desempenho da rede em um deploy de cloud.
+
+-Block Storage(Cinder): Armazenamento de blocos para aplicações que instâncias da
+OpenStack, podendo ser gerenciada pelo DashBoard e pelo Nova. Podendo utilizar
+de plataformas de armazenamento com o Linux Server, IBM, entre outros.
+
+-Telemetry(Ceilometer): Fornece um ponto de contato único para sistemas de
+pagamento, levando em conta todas as medidas para conseguir autorizar o pagamento
+correto do usuário (através dos componentes da OpenStack)
+
+-Orchestration(Heat): Serviço que orquestra e compõe multiplas aplicações de cloud
+através tanto da QueryAPI quanto da Rest API do openStack, usando um template
+parecido com a da AWS.
+
+
+						Conclusão:
+
+Uma opção simples para evitar problemas é ter backup de dos dados e serviços que monitoram as instâncias e outros serviços, sendo possível subir novos serviços caso eles caiam ou tenham algum tipo de problema. Para a segurança é bom utilizar private clouds a fim de dificultar o acesso, e montar sistemas de acesso externo a rede externa com configurações diferentes a fim de dificultar o acesso em todas as partes do sistema, tendo uma configuração para cada parte da rede.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
