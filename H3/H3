@@ -30,16 +30,33 @@ A Azure utiliza o Hyper-V
 5. no node2, alterar o arquivo tasks/portfolio/settings.py para estabelecer a comunicação com o database e rodar o install ssh
 6. no node1, alterar etc/postgresql/12/main/postgresql.conf para receber comunicação externa da ext_net do node 2 e reiniciar o banco de dados
 
-					Deja-vu (Juju Reborn)----------- MUDAR KRL
+					Deja-vu (Juju Reborn)
 	
-1) *cd openstack-base && source openrc (pegar as vars de OS)
+1) 
+source openrc 
+juju add-cloud
 *cloud type: Openstack
-*<Name>
+*cloud name : ud
 *API endpoint url=<OS_AUTH_URL>
 *Ca certificate path = /tmp/root-ca.crt
-*authtype <pass>
-*Passar o region <OS_REGION_NAME>
+*authtype = uperpass 
+*Passar o region = <OS_REGION_NAME>
 *Default no API endpoint url
+
+
+credentials:
+  ud:
+    OpenStackCred:
+      auth-type: userpass
+      domain-name: admin_domain
+      password: wai1chueSocozeef
+      project-domain-name: admin_domain
+      user-domain-name: admin_domain
+      username: admin
+      version: "3"
+
+    
+
 
 2) juju bootstrap <cloud_name> --credential <cloud_credentials> --config network=internal
 
