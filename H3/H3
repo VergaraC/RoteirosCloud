@@ -2,7 +2,7 @@
 
 1) LXD é um container de sistemas para Linux. Ele possibilita o gerenciamento de instâncias de containers e máquinas virtuais por meio da command line ou do REST API.
 
-2)
+2) Imagem h3q2.PNG
 	
 
 1) O Vault utiliza secret engines, onde após utilizar um do seus métodos de autentificação ele consegue integrar com sistemas externos, assim protegendo senhas, credenciais e chaves.
